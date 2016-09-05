@@ -1,0 +1,37 @@
+CREATE (AM:Person {name:"AMALIE"})
+CREATE (SAM:Person {name:"SAMAIRA"})
+CREATE (SAMMY:Person {name:"SAMANTHA"})
+CREATE (ALLI:Person {name:"ALLIANA"})
+CREATE (AUD:Person {name:"AUDREY"})
+CREATE (KAY:Person {name:"KAYLA"})
+CREATE (SLITH:App {name:"SLITHARIO"})
+CREATE (MUSIC:App {name:"MUSICALLY"})
+CREATE (CSWITCH:App {name:"COLORSWITCH"})
+CREATE (SCHAT:App {name:"SNAPCHAT"})
+CREATE (IPHNE:Phone {name:"I PHONE"})
+CREATE (SSUNG:Phone {name:"SAMSUNG"})
+CREATE (WATCH:Phone {name:"APPLE WATCH"})
+CREATE
+(SAM)-[:PLAYS ]->(MUSIC),
+(SAM)-[:PLAYS ]->(SLITH),
+(SAMMY)-[:PLAYS ]->(MUSIC),
+(SAMMY)-[:PLAYS ]->(SCHAT),
+(ALLI)-[:PLAYS ]->(SCHAT),
+(ALLI)-[:PLAYS ]->(CSWITCH),
+(AUD)-[:PLAYS ]->(SCHAT),
+(AUD)-[:PLAYS ]->(CSWITCH),
+(KAY)-[:PLAYS ]->(CSWITCH),
+(KAY)-[:PLAYS ]->(SLITH),
+(AM)-[:PLAYS]->(SLITH),
+(AM)-[:PLAYS]->(CSWITCH),
+(SAM)-[:USES ]->(IPHNE),
+(SAMMY)-[:USES ]->(IPHNE),
+(ALLI)-[:USES ]->(SSUNG),
+(KAY)-[:USES ]->(SSUNG),
+(AM)-[:USES ]->(WATCH),
+(AUD)-[:USES ]->(WATCH)
+
+
+
+
+
